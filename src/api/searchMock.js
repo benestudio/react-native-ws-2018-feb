@@ -7,7 +7,7 @@ export default async ({
   limit,
   q,
 }) => {
-  await timeout(300);
+  await timeout(1000);
   console.log('q', q);
   const items = [...Array(limit).keys()].map(i => ({ id: i + offset, title: `Song ${q} ${i + offset}`, imageUri }));
   return items;

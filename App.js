@@ -5,29 +5,48 @@ import Search from './src/Components/Search';
 import Listing from './src/Components/Listing';
 import searchMock from './src/api/searchMock';
 
+const PAGE = 20;
+
 export default class App extends React.Component {
   constructor() {
     super();
 
     this.state = {
       songs: [],
+      offset: 0,
+      query: 'Shpongle',
+      isFetching: false,
     };
   }
 
-  async componentDidMount() {
+  async loadNextPage() {
+    const { songs, offset, query } = this.state;
+
+    this.setState({ isFetching: true });
+
     const newSongs = await searchMock({
-      offset: 0,
-      limit: 100,
-      q: 'Shpongle',
+      offset: offset,
+      limit: PAGE,
+      q: query,
     });
 
     this.setState({
-      songs: newSongs,
+      isFetching: false,
+      songs: [...songs, ...newSongs],
+      offset: offset + PAGE,
     });
+  }
+
+  async componentDidMount() {
+    await this.loadNextPage();
   }
 
   handleSearchChange(text) {
     console.log('search text is', text);
+  }
+
+  async handleEndReached() {
+    await this.loadNextPage();    
   }
 
   render() {
@@ -41,6 +60,7 @@ export default class App extends React.Component {
         />
         <Listing
           items={songs}
+          onEndReached={() => this.handleEndReached()}
         />
       </View>
     );
