@@ -24,13 +24,30 @@ const styles = StyleSheet.create({
 export default class Seacrh extends Component {
   constructor() {
     super();
+
+    this.state = {
+      text: '',
+    };
+  }
+
+  handleChangeText(newText) {
+    this.setState({
+      text: newText,
+    });
   }
 
   render() {
+    const { text } = this.state;
+
     return (
       <View style={styles.container}>
         <Text style={styles.text}>Search for a song:</Text>
-        <TextInput style={styles.input} value="Wooow!" />
+        <TextInput
+          style={styles.input}
+          value={text}
+          placeholder="Search here..."
+          onChangeText={newText => this.handleChangeText(newText)}
+        />
       </View>
     );
   }
