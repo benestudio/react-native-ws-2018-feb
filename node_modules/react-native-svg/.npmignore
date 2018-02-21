@@ -1,0 +1,6 @@
+node_modules/
+.idea/
+Example/
+experimental/
+android/build/
+screenShoots/

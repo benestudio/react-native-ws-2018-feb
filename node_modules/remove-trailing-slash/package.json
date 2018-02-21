@@ -1,0 +1,28 @@
+{
+  "name": "remove-trailing-slash",
+  "version": "0.1.0",
+  "description": "removes trailing slashes",
+  "keywords": [
+    "slashes", "trailing"
+  ],
+  "main": "index.js",
+  "author": "Stephen Mathieson <me@stephenmathieson.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stephenmathieson/remove-trailing-slash.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stephenmathieson/remove-trailing-slash/issues"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "should": "~1.2.2",
+    "mocha": "~1.12.0"
+  }
+}

@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Users/christopherdro/Desktop/OSS/react-native-maps/lib/android/build/intermediates/res/merged/release/drawable-hdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png",
+        "source": "/Users/christopherdro/.android/build-cache/2803449e219e57a4c49309978c6f137b088f2d8d/output/res/drawable-hdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
+        "merged": "/Users/christopherdro/Desktop/OSS/react-native-maps/lib/android/build/intermediates/res/merged/release/drawable-hdpi-v4/googleg_standard_color_18.png",
+        "source": "/Users/christopherdro/.android/build-cache/2803449e219e57a4c49309978c6f137b088f2d8d/output/res/drawable-hdpi-v4/googleg_standard_color_18.png"
+    },
+    {
+        "merged": "/Users/christopherdro/Desktop/OSS/react-native-maps/lib/android/build/intermediates/res/merged/release/drawable-hdpi-v4/common_google_signin_btn_text_light_normal_background.9.png",
+        "source": "/Users/christopherdro/.android/build-cache/2803449e219e57a4c49309978c6f137b088f2d8d/output/res/drawable-hdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
+    },
+    {
+        "merged": "/Users/christopherdro/Desktop/OSS/react-native-maps/lib/android/build/intermediates/res/merged/release/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png",
+        "source": "/Users/christopherdro/.android/build-cache/2803449e219e57a4c49309978c6f137b088f2d8d/output/res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "/Users/christopherdro/Desktop/OSS/react-native-maps/lib/android/build/intermediates/res/merged/release/drawable-hdpi-v4/common_full_open_on_phone.png",
+        "source": "/Users/christopherdro/.android/build-cache/2803449e219e57a4c49309978c6f137b088f2d8d/output/res/drawable-hdpi-v4/common_full_open_on_phone.png"
+    },
+    {
+        "merged": "/Users/christopherdro/Desktop/OSS/react-native-maps/lib/android/build/intermediates/res/merged/release/drawable-hdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png",
+        "source": "/Users/christopherdro/.android/build-cache/2803449e219e57a4c49309978c6f137b088f2d8d/output/res/drawable-hdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
+        "merged": "/Users/christopherdro/Desktop/OSS/react-native-maps/lib/android/build/intermediates/res/merged/release/drawable-hdpi-v4/googleg_disabled_color_18.png",
+        "source": "/Users/christopherdro/.android/build-cache/2803449e219e57a4c49309978c6f137b088f2d8d/output/res/drawable-hdpi-v4/googleg_disabled_color_18.png"
+    }
+]

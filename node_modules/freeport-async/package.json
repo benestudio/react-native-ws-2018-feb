@@ -1,0 +1,28 @@
+{
+  "name": "freeport-async",
+  "version": "1.1.1",
+  "description": "Uses mikeal's code to find an open port in a given range",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/650Industries/freeport.git"
+  },
+  "keywords": [
+    "port",
+    "free",
+    "open",
+    "new",
+    "fresh",
+    "clean",
+    "networking",
+    "mikeal"
+  ],
+  "author": "exponent.team@gmail.com",
+  "bugs": {
+    "url": "https://github.com/650Industries/freeport/issues"
+  },
+  "homepage": "https://gist.github.com/mikeal/1840641"
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/christopherdro/Desktop/OSS/react-native-maps/lib/android/build/intermediates/res/merged/release/color/common_google_signin_btn_tint.xml",
+        "source": "/Users/christopherdro/.android/build-cache/2803449e219e57a4c49309978c6f137b088f2d8d/output/res/color/common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "/Users/christopherdro/Desktop/OSS/react-native-maps/lib/android/build/intermediates/res/merged/release/color/common_google_signin_btn_text_light.xml",
+        "source": "/Users/christopherdro/.android/build-cache/2803449e219e57a4c49309978c6f137b088f2d8d/output/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/Users/christopherdro/Desktop/OSS/react-native-maps/lib/android/build/intermediates/res/merged/release/color/common_google_signin_btn_text_dark.xml",
+        "source": "/Users/christopherdro/.android/build-cache/2803449e219e57a4c49309978c6f137b088f2d8d/output/res/color/common_google_signin_btn_text_dark.xml"
+    }
+]

@@ -1,0 +1,54 @@
+{
+  "name": "analytics-node",
+  "repository": "git://github.com/segmentio/analytics-node",
+  "version": "2.4.1",
+  "description": "The hassle-free way to integrate analytics into any node application.",
+  "keywords": [
+    "analytics",
+    "segment.io",
+    "segmentio",
+    "client",
+    "driver"
+  ],
+  "main": "lib/index.js",
+  "browserify": {
+    "transform": [
+      "brfs"
+    ]
+  },
+  "bin": {
+    "analytics": "bin/analytics"
+  },
+  "dependencies": {
+    "@segment/loosely-validate-event": "^1.1.2",
+    "clone": "^2.1.1",
+    "commander": "^2.9.0",
+    "crypto-token": "^1.0.1",
+    "debug": "^2.6.2",
+    "lodash": "^4.17.4",
+    "remove-trailing-slash": "^0.1.0",
+    "superagent": "^3.5.0",
+    "superagent-retry": "^0.6.0"
+  },
+  "devDependencies": {
+    "body-parser": "^1.17.1",
+    "brfs": "^1.4.3",
+    "browserify": "^14.1.0",
+    "express": "^4.15.2",
+    "mocha": "^3.2.0",
+    "nsp": "^2.6.3",
+    "standard": "^9.0.1"
+  },
+  "engines": {
+    "node": ">= 0.12.x"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "standard": {
+    "ignore": [
+      "analytics-node.js"
+    ]
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "json-fallback",
+  "description": "JSON parser / stringifier fallback",
+  "version": "0.0.1",
+  "keywords": ["json", "fallback"],
+  "dependencies": {},
+  "development": {},
+  "component": {
+    "scripts": {
+      "json-fallback": "index.js"
+    }
+  }
+}

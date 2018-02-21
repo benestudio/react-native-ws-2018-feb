@@ -3,8 +3,8 @@
 # expo
 .expo/
 
-# dependencies
-/node_modules
+# upload dependencies, if somebody has trouble with installing deps
+# /node_modules
 
 # misc
 .env.local

@@ -1,0 +1,11 @@
+{
+  "name": "crypto-token",
+  "description": "Creates a token which is unguessable",
+  "repository": "git://github.com/segmentio/crypto-token.git",
+  "version": "1.0.1",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "devDependencies": {
+    "mocha": "1.x"
+  }
+}

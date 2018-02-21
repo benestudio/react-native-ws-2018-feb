@@ -1,0 +1,25 @@
+{
+  "name": "superagent-retry",
+  "version": "0.6.0",
+  "description": "A retrying layer for a superagent request",
+  "keywords": [
+    "superagent",
+    "retry"
+  ],
+  "author": "Segmentio <friends@segment.io>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/segmentio/superagent-retry.git"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "superagent": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "express": "~3.3.8",
+    "superagent": "~0.20.0"
+  },
+  "main": "lib/index"
+}
