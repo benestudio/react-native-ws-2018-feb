@@ -3,7 +3,23 @@ import {
   View,
   Text,
   TextInput,
+  StyleSheet,
 } from 'react-native';
+
+const styles = StyleSheet.create({
+  container: {},
+  text: {
+    marginTop: 10,
+    marginBottom: 10,
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: 'green',
+    padding: 10,
+    height: 40,
+    borderRadius: 20,
+  },
+});
 
 export default class Seacrh extends Component {
   constructor() {
@@ -12,9 +28,9 @@ export default class Seacrh extends Component {
 
   render() {
     return (
-      <View>
-        <Text>Search for a song:</Text>
-        <TextInput value="Wooow!" />
+      <View style={styles.container}>
+        <Text style={styles.text}>Search for a song:</Text>
+        <TextInput style={styles.input} value="Wooow!" />
       </View>
     );
   }
