@@ -47,6 +47,15 @@ export default class App extends React.Component {
   }
 
   handleSearchChange(text) {
+    // reset state
+    this.setState({
+      query: text,
+      offset: 0,
+      songs: [],
+    }, () => {
+      this.loadNextPage();
+    });
+
     console.log('search text is', text);
   }
 
@@ -55,13 +64,14 @@ export default class App extends React.Component {
   }
 
   render() {
-    const { songs, isFetching } = this.state;
+    const { songs, query, isFetching } = this.state;
 
     return (
       <View style={styles.container}>
         <Text>Welcome at Bene Studio! Enjoy coding.</Text>
         <Search
           onChange={text => this.handleSearchChange(text)}
+          text={query}
         />
         {
           (isFetching && songs.length === 0)
