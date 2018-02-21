@@ -31,8 +31,12 @@ export default class Seacrh extends Component {
   }
 
   handleChangeText(newText) {
+    const { onChange } = this.props;
+
     this.setState({
       text: newText,
+    }, () => {
+      onChange && onChange(newText);
     });
   }
 
