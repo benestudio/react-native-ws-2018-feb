@@ -1,5 +1,10 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  ActivityIndicator,
+} from 'react-native';
 
 import Search from './src/Components/Search';
 import Listing from './src/Components/Listing';
@@ -50,7 +55,7 @@ export default class App extends React.Component {
   }
 
   render() {
-    const { songs } = this.state;
+    const { songs, isFetching } = this.state;
 
     return (
       <View style={styles.container}>
@@ -58,10 +63,14 @@ export default class App extends React.Component {
         <Search
           onChange={text => this.handleSearchChange(text)}
         />
-        <Listing
-          items={songs}
-          onEndReached={() => this.handleEndReached()}
-        />
+        {
+          (isFetching && songs.length === 0)
+            ? <ActivityIndicator />
+            : <Listing
+              items={songs}
+              onEndReached={() => this.handleEndReached()}
+            />
+        }
       </View>
     );
   }
