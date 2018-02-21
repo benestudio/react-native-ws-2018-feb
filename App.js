@@ -22,15 +22,16 @@ export default class App extends React.Component {
       offset: 0,
       query: 'Shpongle',
       isFetching: false,
+      isEmpty: false,
       token: null,
       isTokenFetching: false,
     };
   }
 
   async loadNextPage() {
-    const { songs, offset, query, token, isFetching } = this.state;
+    const { songs, offset, query, token, isFetching, isEmpty } = this.state;
 
-    if (isFetching) {
+    if (isFetching || isEmpty) {
       return;
     }
 
@@ -45,6 +46,7 @@ export default class App extends React.Component {
 
     if (newSongs.length === 0) {
       console.log('no songs found. there may be an error');
+      this.setState({ isEmpty: true });
     }
   
     this.setState({
@@ -75,6 +77,7 @@ export default class App extends React.Component {
   handleSearchChange(text) {
     // reset state
     this.setState({
+      isEmpty: false,
       query: text,
       offset: 0,
       songs: [],

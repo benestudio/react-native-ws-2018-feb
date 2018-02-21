@@ -11,5 +11,6 @@ export default ({ items, onEndReached }) => (
     keyExtractor={item => item.id}
     ItemSeparatorComponent={() => <Separator />}
     onEndReached={onEndReached}
+    ListEmptyComponent={() => <Text>No songs.</Text>}
   />
 );
