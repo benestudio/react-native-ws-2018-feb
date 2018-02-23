@@ -1,4 +1,12 @@
+# Build Your Own Spotify App in React Native
+
+This is the preparation guide for the workshop.
+
+To see the final code we were coding: https://github.com/benestudio/react-native-ws-2018-feb-final-code
+
 See blog post for steps: https://blog.benestudio.co/build-your-own-spotify-app-in-react-native-ca3714b1cab8
+
+----------
 
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
 
